@@ -140,6 +140,7 @@ class AndroidAccount:
             self.sock.setblocking(False)
 
             self._gcm_send_login(self.android_id, self.security_token)
+            version = self._rcv_exact(1)
 
             self.counter = 0
 
