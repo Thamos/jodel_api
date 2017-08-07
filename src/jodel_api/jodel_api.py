@@ -24,8 +24,8 @@ class JodelAccount:
 
     api_url = "https://api.go-tellm.com/api{}"
     client_id = '81e8a76e-1e02-4d17-9ba0-8a7020261b26'
-    secret = 'GnAXvETHFDbDfhngjDYEkszdqZowDpWsWuCectMJ'.encode('ascii')
-    version = '4.49.0'
+    secret = 'SUJlYgihNxTmcfdrEcjROozfNemiqJSjYpoJJMUC'.encode('ascii')
+    version = '4.55.1'
     secret_legacy = 'hyTBJcvtpDLSgGUWjybbYUNKSSoVvMcfdjtjiQvf'.encode('ascii')
     version_legacy = '4.47.0'
 
@@ -364,6 +364,29 @@ class JodelAccount:
 
     def get_user_config(self, **kwargs):
         return self._send_request("GET", "/v3/user/config", **kwargs)
+
+    # #################################### #
+    # DONT KNOW WHERE TO PUT / NOT WORKING #
+    # #################################### #
+
+    def get_hashtags_suggested(self, **kwargs):
+        return self._send_request("GET", "/v3/hashtags/suggested", **kwargs)
+
+    def get_filter_place_combo(self, place_id, **kwargs):
+        return self._send_request("GET", "/v3/posts/filter/places/{}/combo".format(place_id), **kwargs)
+
+    def get_filter_place_discussed(self, place_id, after, limit, **kwargs):
+        return self._send_request("GET", "/v3/posts/filter/places/{}/discussed".format(place_id), params={"after": after, "limit": limit}, **kwargs)
+
+    def get_filter_place_popular(self, place_id, after, limit, **kwargs):
+        return self._send_request("GET", "/v3/posts/filter/places/{}/popular".format(place_id), params={"after": after, "limit": limit}, **kwargs)
+
+    def get_filter_place_recent(self, place_id, after, limit, **kwargs):
+        return self._send_request("GET", "/v3/posts/filter/places/{}/recent".format(place_id), params={"after": after, "limit": limit}, **kwargs)
+
+    def get_place_search(self, **kwargs):
+        return self._send_request("GET", "/v3/places/search", **kwargs)
+    
 
 
 # helper function to mock input

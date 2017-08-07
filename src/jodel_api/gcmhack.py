@@ -1,11 +1,9 @@
 from __future__ import (absolute_import, print_function, unicode_literals)
 from future.utils import raise_from
 
-import sys
 import random
 import requests
 import string
-import time
 import ssl
 import socket
 import varint
@@ -142,7 +140,6 @@ class AndroidAccount:
             self.sock.setblocking(False)
 
             self._gcm_send_login(self.android_id, self.security_token)
-            version = self._rcv_exact(1)
 
             self.counter = 0
 
