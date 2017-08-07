@@ -290,15 +290,7 @@ Clone the directory, install the library and run the tests with
 
     python setup.py test
 
-.. |Build Status| image:: https://travis-ci.org/nborrmann/jodel_api.svg?branch=master
+.. |Build Status| image:: https://travis-ci.org/thamos/jodel_api.svg?branch=master
    :target: https://travis-ci.org/nborrmann/jodel_api
-.. |Coverage Status| image:: https://img.shields.io/codecov/c/github/nborrmann/jodel_api.svg
+.. |Coverage Status| image:: https://img.shields.io/codecov/c/github/thamos/jodel_api.svg
    :target: https://codecov.io/gh/nborrmann/jodel_api
-.. |Health| image:: https://landscape.io/github/nborrmann/jodel_api/master/landscape.svg?style=flat
-   :target: https://landscape.io/github/nborrmann/jodel_api/master
-.. |Python Versions| image:: https://img.shields.io/pypi/pyversions/jodel_api.svg
-   :target: https://pypi.python.org/pypi/jodel_api/
-.. |PyPI Version| image:: https://img.shields.io/pypi/v/jodel_api.svg
-   :target: https://pypi.python.org/pypi/jodel_api/
-.. |License| image:: https://img.shields.io/pypi/l/jodel_api.svg
-   :target: https://pypi.python.org/pypi/jodel_api/
