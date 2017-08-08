@@ -1,7 +1,7 @@
 Jodel API
 =========
 
-|Build Status| |Coverage Status| |Health| |Python Versions| |PyPI Version| |License|
+|Build Status| |Coverage Status|
 
 Inofficial interface to the private API of the Jodel App. Not affiliated
 with *The Jodel Venture GmbH*.
